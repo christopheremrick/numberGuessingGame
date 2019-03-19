@@ -16,10 +16,10 @@ public class Main {
             Integer numberGuessed = scan.nextInt(); // When looped back it should take user input again
 
             if(numberGuessed > number) {
-                System.out.println("The number you guessed is too large!");
+                System.out.println("The number you guessed is too large! Try again.");
             }
             else if(numberGuessed < number) {
-                System.out.println("The number you guessed is too small!");
+                System.out.println("The number you guessed is too small! Try again.");
             }
             else if(numberGuessed == number) {
                 loop = false;
