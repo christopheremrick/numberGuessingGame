@@ -9,6 +9,7 @@ public class Main {
 
         Integer number = (int) (Math.random() * 100);
         Scanner scan = new Scanner(System.in);
+        Integer tries = 0;
 
         Boolean loop = true;
         do {
@@ -27,11 +28,23 @@ public class Main {
             else {
                 System.out.println("That isn't what I asked for. Try again.");
             }
+            tries++;
+
 
         } while (loop);
 
         System.out.println("You guessed the correct number!");
         System.out.println("The number was " + number + ".");
+        System.out.println("It took you " + addS(tries));
 
+    }
+
+    public static String addS(Integer input) {
+        if(input <= 1) {
+            return input + " try.";
+        }
+        else {
+            return input + "tries.";
+        }
     }
 }
