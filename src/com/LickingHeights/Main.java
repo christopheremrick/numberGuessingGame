@@ -22,11 +22,8 @@ public class Main {
             else if(numberGuessed < number) {
                 System.out.println("The number you guessed is too small! Try again.");
             }
-            else if(numberGuessed == number) {
-                loop = false;
-            }
             else {
-                System.out.println("That isn't what I asked for. Try again.");
+                loop = false;
             }
             tries++;
 
@@ -44,7 +41,7 @@ public class Main {
             return input + " try.";
         }
         else {
-            return input + "tries.";
+            return input + " tries.";
         }
     }
 }
