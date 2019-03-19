@@ -37,7 +37,7 @@ public class Main {
     }
 
     private static String addS(Integer input) {
-        if(input <= 1) {
+        if(input < 1) {
             return input + " try.";
         }
         else {
