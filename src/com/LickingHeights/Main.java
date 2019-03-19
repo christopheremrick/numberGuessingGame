@@ -15,10 +15,20 @@ public class Main {
             System.out.println("Please guess a number between one and one hundred.");
             Integer numberGuessed = scan.nextInt(); // When looped back it should take user input again
 
-
-
+            if(numberGuessed > number) {
+                System.out.println("The number you guessed is too large!");
+            }
+            else if(numberGuessed < number) {
+                System.out.println("The number you guessed is too small!");
+            }
+            else if(numberGuessed == number) {
+                loop = false;
+            }
 
         } while (loop);
+
+        System.out.println("You guessed the correct number!");
+        System.out.println("The number was " + number + ".");
 
     }
 }
