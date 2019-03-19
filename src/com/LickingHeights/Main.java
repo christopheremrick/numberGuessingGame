@@ -13,7 +13,7 @@ public class Main {
         Boolean loop = true;
         do {
             System.out.println("Please guess a number between one and one hundred.");
-            
+            Integer numberGuessed = scan.nextInt(); // When looped back it should take user input again
 
 
 
