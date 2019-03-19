@@ -24,6 +24,9 @@ public class Main {
             else if(numberGuessed == number) {
                 loop = false;
             }
+            else {
+                System.out.println("That isn't what I asked for. Try again.");
+            }
 
         } while (loop);
 
